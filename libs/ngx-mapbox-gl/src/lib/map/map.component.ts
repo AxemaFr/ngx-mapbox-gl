@@ -36,7 +36,7 @@ import { MapEvent } from './map.types';
 
 @Component({
   selector: 'mgl-map',
-  template: '<div #container></div>',
+  template: `<div #container><ng-content select="content"></ng-content></div>`,
   styles: [
     `
       :host {
